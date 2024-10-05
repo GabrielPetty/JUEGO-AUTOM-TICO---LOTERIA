@@ -1,12 +1,10 @@
 ## SOBRE EL PROGRAMA ##
 
-  Es un juego al estilo de una lotería, el sistema le 
-  solicitará la cantidad de participantes que se
-  encuentren dispuestos a jugar.
-  Una vez seleccionados los participantes, se eligen
-  los números deseados para el posterior sorteo. El 
-  sorteo se realiza de manera automática por el sistema,
-  el cual selecciona los números aleatoreamente.
+  Es un juego al estilo de una lotería.
+  Se eligen los números deseados para el posterior 
+  sorteo. El sorteo se realiza de manera automática 
+  por el sistema, el cual selecciona los números 
+  aleatoreamente.
   Todo su proceso de evaluación de ganadores lo 
   realiza el programa, mostrando los resultados 
   correspondientes a los participantes.
