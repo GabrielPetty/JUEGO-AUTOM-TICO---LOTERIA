@@ -6,13 +6,10 @@ from random import*
 import os
 from unittest import result
 
-
-
 def Reglas():
     os.system("cls")
     print("\n")
     print("-*-"*35)
-    
     
     print('''\n                              BIENVENIDO AL SORTEO AUTOMÁTIZADO !!!\n            
                                         REGLAMENTO:
@@ -22,21 +19,17 @@ def Reglas():
         LA MÁQUINA SELECCIONARÁ 12 NÚMEROS ALEATORIAMENTE.
         SI 6 DE LAS 12 BOLILLAS SACADAS COINCIDEN CON LOS 6 NÚMEROS SELECCIONADOS, USTED GANA!!!.\n
         ''')
-    
-    
     #print('''\n             
     #    1 : Seleccione la cantidad de Jugadores a participar
     #    2 : Debe ingresar 6 números del 0 al 40 para comenzar el
-    #        sorteo, los números se ingresan de a uno a la vez.\n''')
-    
+    #        sorteo, los números se ingresan de a uno a la vez.\n''')  
     print("\n")
     print("-*-"*35)
     print(input("\n                     PRESIONE ENTER PARA INICIAR EL SORTEO..."))
-    
+  
     menuPrincipal()
 
 def menuPrincipal():
-
     os.system('cls')
     listaNum = []
     for cuenta in range(41):
@@ -46,7 +39,6 @@ def menuPrincipal():
         bingo = []
         
         def numeroReal():
-
             numero = 0
             sel = 1
             valido = True
@@ -74,31 +66,22 @@ def menuPrincipal():
                         print("-_-_-"*30)
                         print("\n                                                ELIJA LOS 6 NÚMEROS NUEVAMENTE...\n")
                         #print("LISTA DE NÚMEROS PARA SELECCIONAR\n", listaNum)
-
                         bingo.clear()
                         numeroReal()
-
                     break
                 except ValueError:
                     print("\n        INGRESE VALORES ENTEROS, ejemplo 2 - 5 - 10...")
 
-
-        
-        
         numeroReal()
         os.system("cls")
         print("\nComienza el juego...")
         print('''
                    SE MEZCLARÁN LAS BOLILLAS Y SE INGRESARÁN 12 NÚMEROS ALEATORIOS, 
                                              "SUERTE!!!"...''')
-    
         print(input("\nCOMENCEMOS...PRESIONE ENTER."))
-
         numBolillas = []
         numBolillas = sample(listaNum,12)
-    
-        os.system('cls')
-    
+        os.system('cls')    
         bingo.sort()
         numBolillas.sort()
 
@@ -109,19 +92,11 @@ def menuPrincipal():
         print("\nNúmeros ganadores: \n", ' - '.join(map(str, numBolillas)), '\n')## EN CASO DE QUERER VER LOS VALORES GANADORES.
     
         print('\n', '-'*35, '\n')
-
-        
-    
     
         numBolillas.extend(bingo)
         numBolillas.sort()
 
-
-        
-        
-        
         while len(numBolillas) >0:
-           
             ganador = []
             resultado = []
             if len(numBolillas) >0:
@@ -131,7 +106,6 @@ def menuPrincipal():
                         if len(resultado) == 18:
                             print("No hubo aciertos..., ""\nINTENTE NUEVAMENTE !!!")
                             break
-
                     else:
                         ganador.append(numero)
                 for numeros in ganador:
@@ -139,13 +113,11 @@ def menuPrincipal():
                         print("\nHA GANADOOOO !!! FELICIDADES...")
                         print("SUS NÚMEROS GANADORES SON: \n", ' - '.join(map(str, ganador)))
                         break
-                        
                     else:
                         ganadorT = len(ganador)
                         print("\nUsted acertó: ", ganadorT, "número/s.")
                         print("\n     ", ' - '.join(map(str, ganador)), "\n", "\nINTENTE NUEVAMENTE !!!\n")
                         break
-                        
                 break
 
         def validacion():
