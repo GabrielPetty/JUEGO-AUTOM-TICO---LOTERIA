@@ -9,6 +9,11 @@
   realiza el programa, mostrando los resultados 
   correspondientes a los participantes.
 
+## REQUERIMIENTOS
+            - Se debe tener instalado 'HeidiSQL'
+              para utilizar la Base de Datos.
+              https://www.heidisql.com/
+
 ## ESPECIFICACIONES TÉCNICAS
 
             * Utilización de bucles.
