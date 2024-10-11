@@ -19,10 +19,7 @@ def Reglas():
         LA MÁQUINA SELECCIONARÁ 12 NÚMEROS ALEATORIAMENTE.
         SI 6 DE LAS 12 BOLILLAS SACADAS COINCIDEN CON LOS 6 NÚMEROS SELECCIONADOS, USTED GANA!!!.\n
         ''')
-    #print('''\n             
-    #    1 : Seleccione la cantidad de Jugadores a participar
-    #    2 : Debe ingresar 6 números del 0 al 40 para comenzar el
-    #        sorteo, los números se ingresan de a uno a la vez.\n''')  
+ 
     print("\n")
     print("-*-"*35)
     print(input("\n                     PRESIONE ENTER PARA INICIAR EL SORTEO..."))
