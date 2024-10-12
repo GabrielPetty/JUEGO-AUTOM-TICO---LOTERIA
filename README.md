@@ -1,18 +1,13 @@
 ## SOBRE EL PROGRAMA ##
 
   Es un juego al estilo de una lotería.
-  Se eligen los números deseados para el posterior 
-  sorteo. El sorteo se realiza de manera automática 
+  Se eligen 6 números del 0 al 40 para el posterior 
+  sorteo. El mismo se realiza de manera automática 
   por el sistema, el cual selecciona los números 
-  aleatoreamente.
+  a sortear aleatoreamente.
   Todo su proceso de evaluación de ganadores lo 
   realiza el programa, mostrando los resultados 
   correspondientes a los participantes.
-
-## REQUERIMIENTOS
-            - Se debe tener instalado 'HeidiSQL'
-              para utilizar la Base de Datos.
-              https://www.heidisql.com/
 
 ## ESPECIFICACIONES TÉCNICAS
 
