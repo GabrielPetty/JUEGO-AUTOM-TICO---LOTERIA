@@ -2,9 +2,10 @@
 
 from ast import Break
 import numbers
-from random import*
+from random import *
 import os
 from unittest import result
+import validar
 
 def Reglas():
     os.system("cls")
@@ -116,21 +117,11 @@ def menuPrincipal():
                         print("\n     ", ' - '.join(map(str, ganador)), "\n", "\nINTENTE NUEVAMENTE !!!\n")
                         break
                 break
+        if validar.validacion() == True:
+          menuPrincipal()
 
-        def validacion():
-            continuar = ""
-            while continuar!= "SI" and continuar!= "NO":
-                continuar = input(f'''\nDesea continuar jugando ? (si/no): ''').upper()
-                if continuar!= "SI" and continuar!= "NO":
-                    print("Por favor, ingrese 'SI' o 'NO' para continuar...")
-                elif continuar == "SI":
-                    menuPrincipal()
-                elif continuar == "NO":
-                    os.system('cls')
-                    print("\n     -- * -- * --   GRACIAS POR JUGAR A LA LOTERIA AUTOMATIZADA...   -- * -- * --\n")
-                else:
-                    print("Ingrese valores solicitados...")
-        validacion()    
+
+        
     validoLoteria()
 
 Reglas()
